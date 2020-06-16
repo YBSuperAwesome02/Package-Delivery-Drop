@@ -44,14 +44,14 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
-  packageSprite.collide(groundSprite)
-  packageSprite.restitution=2.0
+  //packageSprite.collide(groundSprite)//
+  packageSprite.restitution=0.5
   dropzonepart1.display()
   dropzonepart2.display()
   dropzonepart3.display()
-  packageSprite.collide(dropzonepart1)
+  /*packageSprite.collide(dropzonepart1)
   packageSprite.collide(dropzonepart2)
-  packageSprite.collide(dropzonepart3)
+  packageSprite.collide(dropzonepart3)*/
 }
 
 function keyPressed() {
